@@ -1,0 +1,13 @@
+
+
+function CloseWindow(){
+		 try{
+			 if(window.external && window.external.IM_OA){
+				 window.external.IM_Close();
+			 }else{
+				window.close();
+			 }
+		 }catch(e){
+			 window.close();
+		 }
+	 }
